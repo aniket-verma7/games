@@ -109,8 +109,9 @@ void gameOver()
     gameOver=1;
     clear();
     fill(255,255,255);
-    text("Game Over",250,425);
-    text("Press R to Replay",200,350);
+    text("High Score : "+score,225,300);
+    text("Press R to Replay",190,370);
+    text("Game Over",255,435);
   }
   
   
@@ -152,6 +153,11 @@ void keyPressed()
     if(key=='a')dir='a';
     if(key=='d')dir='d';
     if(key=='R' || key=='r')reset();
-    if(key==ENTER && temp==0 && gameOver==0){p=true;temp=1;}
+    if(key==ENTER && temp==0 && gameOver==0)
+    {
+        text(pause,525,800);
+        p=true;
+        temp=1;
+    }
      else if(key==ENTER && temp==1 && gameOver==0){p=false;temp=0;}
 }
