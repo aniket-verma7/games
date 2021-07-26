@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="400.0" minWidth="300" prefHeight="500.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.controller.LayoutController">
+   <children>
+      <Pane prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="player1Name" layoutX="100.0" layoutY="14.0" />
+            <TextField fx:id="player2Name" layoutX="375.0" layoutY="14.0" />
+            <Label fx:id="player2Label" layoutX="285.0" layoutY="15.0" text="Player 2" textFill="#000dff">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1Label" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="10.0" layoutY="15.0" text="Player 1" textFill="#ee0303">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="start" layoutX="555.0" layoutY="14.0" mnemonicParsing="false" onAction="#startGame" text="Start" />
+         </children>
+      </Pane>
+
+      <Pane fx:id="pane" layoutY="50.0" minHeight="300.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+
+      <Pane fx:id="paneBottom" layoutY="460.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btnPlayAgain" layoutX="5.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnPlayAgain" text="Play Again" />
+            <TextField fx:id="message" editable="false" layoutX="100.0" layoutY="10.0" prefWidth="450.0" />
+            <Label fx:id="playerChance" layoutX="556.0" layoutY="5.0" prefHeight="30.0" prefWidth="60.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+
+   </children>
+</AnchorPane>
